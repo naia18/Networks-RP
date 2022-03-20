@@ -6,7 +6,7 @@
 - final_data.R: has data on all households of rural Karnataka taken from Banerjee et al. with predicted sub-castes (for the hh that have missing information).
 
 
-# Code in R folder
+## Code in R folder
 
 First we need to clean thoroughly the data on individual_characteristics.dta. Most of the subcastes have misspelled duplicates with typos. An example is the case of the sub-caste Adi Karnataka (which appears written in 15 different label-types) or the case of the branches of Christianity (which I gathered in one sole label). The cleaning of the data is carried out in the file **Data_Clean.R** and it yields a cleaned .Rdata file that will be used in the following steps: creating the train-test dataset and building the RF model for classification.
 
@@ -17,3 +17,7 @@ Once I am done, I can predict the nodes in the Test set by using the trained mod
 Finally, the file **Shock_ALL.R** estimates a logit model that explains to a great extent the original network, we calibrate the parameters left of the model, and we propose a potential post-shock scenario constructed with the calibrated parameters and estimated coefficients for all villages.
 
 **30th_Vil_Visualisation.R** is used to create an interactive graph with visNetwork for the 30th village, but could be any other village.
+
+
+## Google Earth Engine
+In order to analyse the weather conditions of the Karnataka state and defend the fact that it would be pertinent to study this region, I compute a brief analysis based on the LTA of rainfall in the Karnataka state in Google Earth Engine. This is given in **earth\_engine\_code.js**.
