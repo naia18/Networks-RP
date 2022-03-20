@@ -18,6 +18,9 @@ Finally, the file **Shock_ALL.R** estimates a logit model that explains to a gre
 
 **30th_Vil_Visualisation.R** is used to create an interactive graph with visNetwork for the 30th village, but could be any other village.
 
+## Interactive Networks folder
+
+Here we can download the .html files of the pre-prediction interactive representation of the 30th village in Karnataka, based on sub-castes, as well as the post-prediction representation.
 
 ## Google Earth Engine
 In order to analyse the weather conditions of the Karnataka state and defend the fact that it would be pertinent to study this region, I compute a brief analysis based on the LTA of rainfall in the Karnataka state in Google Earth Engine. This is given in **earth\_engine\_code.js**.
